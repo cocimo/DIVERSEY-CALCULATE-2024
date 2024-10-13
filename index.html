@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CALCULOS DIVERSEY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="main-title">CALCULOS DIVERSEY</h1>
+    <div class="container">
+        <div class="column">
+            <h2>Cálculo de Lubricante</h2>
+            <input type="number" id="picos1" placeholder="Cantidad de Picos">
+            <input type="number" id="concentracion" placeholder="Concentración %">
+            <div class="button-group">
+                <button onclick="calcularLubricante()">Calcular</button>
+                <button id="limpiar1" onclick="limpiarDatos(1)">Limpiar</button>
+            </div>
+            <div class="result" id="resultadoLubricante"></div>
+        </div>
+        <div class="column">
+            <h2>Cálculo de % Concentración</h2>
+            <input type="number" id="picos2" placeholder="Cantidad de Picos">
+            <input type="number" id="aguaNominal" placeholder="Consumo nominal de agua en m3/h">
+            <input type="number" id="lubricanteKg" placeholder="Lubricante en Kg/h">
+            <div class="button-group">
+                <button onclick="calcularConcentracion()">Calcular</button>
+                <button id="limpiar2" onclick="limpiarDatos(2)">Limpiar</button>
+            </div>
+            <div class="result" id="resultadoConcentracion"></div>
+        </div>
+    </div>
+
+    <div class="comment">
+        El cálculo está realizado en líneas sin temporizar sectores.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
